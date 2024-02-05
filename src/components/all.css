@@ -1,0 +1,195 @@
+.lefnav {
+    background-color: #fff;
+    height: 100vh;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 5px;
+    margin: 0;
+    color: #006666;
+}
+
+.navLinks {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.navLinksActive {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: #006666;
+    cursor: default;
+    margin-top: 30px;
+}
+
+.copyright {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: large;
+    color: #afafaf;
+    cursor: default;
+    margin-top: 50px;
+}
+
+.rightBox {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f3f3f3;
+    height: 100vh;
+    width: 75%;
+}
+
+.homeLeftNav {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 80px;
+    padding-left: 8%;
+}
+
+.imageBox {
+    height: 280px;
+    width: 280px;
+    border-radius: 68% 32% 70% 30% / 47% 44% 56% 53%;
+    border: 10px solid #00666697;
+    transition: border-radius 6s ease, background-image 3s ease;
+    background-image: url('./Home/saurabh_profile.jpg');
+    /* Replace 'your-image-url.jpg' with the actual image URL */
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.titleName {
+    font-size: 48px;
+    color: #006666;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 0%;
+}
+
+.titleProffesion {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.titleDetails {
+    font-size: 18px;
+    color: #4f4f4f;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.wrapper ul {
+    list-style: none;
+    display: flex;
+    margin-left: -9%;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height 
+    and float them to left and set its border and border-radius.
+   */
+.wrapper ul li {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 3px solid #a8a8a8;
+    transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px 
+  to align it properly */
+.wrapper ul li .fa {
+    color: #a8a8a8;
+    margin-top: 3px;
+    transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+    to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.github {
+    border: 3px solid #006666;
+    box-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-github {
+    color: #006666;
+    text-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover.linkedin {
+    border: 3px solid #006666;
+    box-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-linkedin {
+    color: #006666;
+    text-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+    border: 3px solid #006666;
+    box-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+    color: #006666;
+    text-shadow: 0 0 15px #006666;
+    transition: all 0.5s ease;
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: 350px;
+    }
+
+    .wrapper ul li {
+        margin-top: 10px;
+    }
+}
+
+
+@media screen and (max-width: 340px) {
+    .wrapper {
+        width: 150px;
+    }
+
+    .wrapper ul li {
+        margin: 15px;
+    }
+}
