@@ -21,3 +21,7 @@ code {
 ::selection {
   background: #5cdb9546;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
